@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    
+}  
+/*HEADER*/
+li, a{
+    font-family: Khand;
+    text-decoration: none;
+    font-size: 18px;
+   
+}
+.logo{
+    color:#CB0507;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20%;
+    box-sizing: border-box;
+    background-color: darkgray;
+    
+}
+
+.menu li{
+    display: inline-block;
+    padding: 0px 20px;
+    
+}
+ .menu li a,.logo{
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+    padding: 0px 5px 0px 5px;
+    transition: all 0.3s ease 0s;
+}
+
+.menu li a:hover, .logo:hover{
+    color: darkgoldenrod;
+    box-shadow: none;
+
+}
+
+#btn-mobile{
+    display: none;
+}
+
+@media (max-width: 750px){
+    #btn-mobile{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+    nav.active .menu{
+        display: flex;
+    }
+}
+
+
+
+
+/* MAIN*/
+
+h1, p{
+    font-family: Roboto ;
+    font-weight: 300;
+    text-align: center;
+}
+h1{
+    font-size: 1.2em;
+    margin-bottom: 3px;
+}
+
+main{
+    box-shadow: 1px 1px 1px -1px  black;
+    margin: auto;
+    padding: 5% 25%;
+    
+}
+ 
+img{
+    width: 99%;
+    padding: 10px ;
+}
+ 
+ 
